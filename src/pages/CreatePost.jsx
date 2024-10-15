@@ -12,22 +12,19 @@
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
         try {
-            const newPostRef = await addDoc(postsRef, {
-                title: title,
-                body: body,
-                userId: user?.uid, 
-                userEmail: user?.email
-                });
-                
-                await getDoc(newPostRef);
-
-        setTitle("");
-        setBody("");
-        navigate('/')
+        const newPostRef = await addDoc(postsRef, {
+            title: title,
+            body: body,
+            userId: user?.uid, 
+            userEmail: user?.email
+          });
+          await getDoc(newPostRef);
+          setTitle("");
+          setBody("");
+          navigate('/');
         } catch (error) {
-        console.error("Error adding post: ", error);
+          console.error("Error adding post: ", error);
         }
     };
 

@@ -99,7 +99,7 @@ svg{
         border: $dusty-rose 1px solid;
         &:hover{
             color: $dark-charcoal;
-            background-color: darken($color: $light-beige, $amount: 10) !important;
+            color.adjust($color, $lightness: -10%) !important;
             transition: color 0.9s ease;
         }
     }

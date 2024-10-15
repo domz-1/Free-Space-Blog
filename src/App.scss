@@ -107,7 +107,6 @@ svg {
         border: $dusty-rose 1px solid;
 
         &:hover {
-            color: darken($deep-mauve, 10%) !important;
             transition: color 0.9s ease;
         }
     }

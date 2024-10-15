@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/3efae89f-a1f1-4d14-bfc0-c794f17d0100)
+
+
 # Blog React Vite Project
 
 This project is a blog application built with React and Vite, featuring user authentication, protected routes, and CRUD operations for blog posts.

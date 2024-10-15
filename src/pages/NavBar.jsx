@@ -140,27 +140,6 @@ const NavBar = () => {
                                         <Typography>
                                             <Link to={"/signIn"} className='link'>SignUp</Link>
                                         </Typography>
-                                        <Typography 
-                                        className='link'>
-                                        <Button onClick={() => {
-                                            handleLogout();
-                                            handleClose();
-                                        }} 
-                                        sx={{
-                                        color: 'white',
-                                        backgroundColor: '#795757',
-                                        borderRadius: '4px',
-                                        padding: '2px 10px',
-                                        textTransform: 'uppercase',
-                                        fontSize: '14px',
-                                        fontWeight: 'bold',
-                                        cursor: 'pointer',
-                                        '&:hover': {
-                                            backgroundColor: '#292020',
-                                        },
-                                        }}
-                                        className='link'>Logout</Button>
-                                        </Typography>
                                     </>
                                 )}
                                 {/* Menu button for small and medium screens */}
